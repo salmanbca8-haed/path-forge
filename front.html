@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Path Forge</title>
+  <link rel="shortcut icon" href="./image/pflogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sevillana&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <a href="./index.html"><button><b>Back</b></button></a>
+  <div class="app">
+   
+    <header>
+
+      <h1>Path Forge</h1>
+      <p class="intro">Build your career roadmap</p>
+    </header>
+
+    <!-- Role Selection -->
+    <div id="roles" class="roles">
+      <button onclick="loadRoadmap('frontend')"><b>Frontend Developer</b></button>
+      <button onclick="loadRoadmap('data')"><b>Data Analyst</b></button>
+      <button onclick="loadRoadmap('uiux')"><b>UI/UX</b></button>
+      <button onclick="loadRoadmap('cyber')"><b>Cyber Security</b></button>
+      <button onclick="loadRoadmap('aiml')"><b>AI/ML</b></button>
+      <button onclick="loadRoadmap('full')"><b>Full Stack Dvelopment</b></button>
+      <button onclick="loadRoadmap('auto')"><b>Automation</b></button>
+      
+    </div>
+    <a href="./updates.html"><button><b>See Upcoming Updates</b></button></a>
+    <!-- Roadmap -->
+    <div id="roadmap" class="hidden"></div>
+
+    <!-- Topic Details -->
+    <div id="topicDetails" class="hidden"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
